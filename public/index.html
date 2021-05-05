@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/assets/img/Icon.png" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minumu-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="¡Disfruta de el Anime que prefieras en Ao Desu!"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css">
+    <link rel="stylesheet" href="./assets/css/flash.css">
+    <title>Ao Desu | Anime Online</title>
+    <script src="https://kit.fontawesome.com/158739efff.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <header class="header">
+      <div class="container-header-A">
+        <div class="img-header">
+          <a href="%PUBLIC_URL%/index.html" target="_blank">
+          <img src="%PUBLIC_URL%/assets/img/Logo300x300.png">
+          </a>
+        </div>
+        <div class="nav-header">
+          <nav class="nav">
+            <h2 class="links-menu"><a href="">Inicio</a></h2>
+            <h2 class="links-menu"><a href="">Animes</a></h2>
+            <h2 class="emision"><a href="">En Emisión <i class="fas fa-clock"></i></a></h2>
+          </nav>  
+        </div>
+      </div>
+      <div class="container-switch-header">
+        <div class="container-switch-header-B">
+            <button class="switch" id="switch">
+                <span class="night">
+                    <i class="fas fa-moon"></i>
+                </span>
+                <span class="day">
+                    <i class="fas fa-sun"></i>
+                </span>
+            </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+        <div class="container-ue">
+          <div class="title">
+            <h3 class="title-main"><i class="fas fa-fire"></i> Últimos Populares</h3>
+          </div>
+          <div class="contenido">
+            <a href="%PUBLIC_URL%/anime/kimetsu_no_yaiba.html" class="link-contenido">
+              <div class="contenedor-contenido">
+                <div class="hover-interface">
+                  <div class="arrow-interface">
+                    <i class="far fa-arrow-alt-circle-right"></i>
+                  </div>
+                </div>
+                <img src="./assets/miniaturas/Kimetsu no yaiba/season 1/Kimetsu.jpg" title="Kimetsu No Yaiba">
+                <div class="title-contenido">
+                  <p>Kimetsu No Yaiba</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="%PUBLIC_URL%/anime/kono_suba.html" class="link-contenido">
+              <div class="contenedor-contenido">
+                <div class="hover-interface">
+                  <div class="arrow-interface">
+                    <i class="far fa-arrow-alt-circle-right"></i>
+                  </div>
+                </div>
+                <img src="./assets/miniaturas/Kono Suba/season 1/kono-suba.jpg" title="Kono Suba">
+                <div class="title-contenido">
+                  <p>Kono Subarashii Sekai ni Shukufuku wo!</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="link-contenido">
+              <div class="contenedor-contenido">
+                <div class="hover-interface-c">
+                  <div class="arrow-interface">
+                    <i class="far fa-times-circle"></i>
+                  </div>
+                </div>
+                <img src="./assets/miniaturas/Shingeki no kyojin/season 1/Shingeki.jpg" title="Shingeki no kyojin">
+                <div class="title-contenido-c">
+                  <p>shingeki No Kyojin</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="link-contenido">
+              <div class="contenedor-contenido">
+                <div class="hover-interface-c">
+                  <div class="arrow-interface">
+                    <i class="far fa-times-circle"></i>
+                  </div>
+                </div>
+                <img src="./assets/miniaturas/Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai/Bunny girl senpai.jpg" title="Bunny Girl Senpai">
+                <div class="title-contenido-c">
+                  <p>Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="link-contenido">
+              <div class="contenedor-contenido">
+                <div class="hover-interface-c">
+                  <div class="arrow-interface">
+                    <i class="far fa-times-circle"></i>
+                  </div>
+                </div>
+                <img src="./assets/miniaturas/Mob psycho 100/Mob psycho 100.jpg" title="Mob Psycho 100">
+                <div class="title-contenido-c">
+                  <p>Mob Psycho 100</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="link-contenido">
+              <div class="contenedor-contenido">
+                <div class="hover-interface-c">
+                  <div class="arrow-interface">
+                    <i class="far fa-times-circle"></i>
+                  </div>
+                </div>
+                <img src="./assets/miniaturas/Black Clover/season 1/Black clover.jpg" title="Black Clover">
+                <div class="title-contenido-c">
+                  <p>Black Clover</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="link-contenido">
+              <div class="contenedor-contenido">
+                <div class="hover-interface-c">
+                  <div class="arrow-interface">
+                    <i class="far fa-times-circle"></i>
+                  </div>
+                </div>
+                <img src="./assets/miniaturas/Kimetsu no yaiba/Infinity train/Kimetsu_no_yaiba_infinity_train.jpg" title="Kimetsu no yaiba Movie: Mugen Ressha-hen">
+                <div class="title-contenido-c">
+                  <p>Kimetsu no yaiba Movie: Mugen Ressha-hen</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          </div>
+        </div>
+
+        <div class="container-ue">
+          <div class="title">
+            <h3 class="title-main"><i class="fas fa-rocket"></i> Nuevos Animes</h3>
+          </div>
+          <div class="contenido">
+            <a href="%PUBLIC_URL%/anime/kimetsu_no_yaiba.html" class="link-contenido">
+              <div class="contenedor-contenido">
+                <div class="hover-interface-c">
+                  <div class="arrow-interface">
+                    <i class="far fa-times-circle"></i>
+                  </div>
+                </div>
+                <img src="./assets/miniaturas/soon.jpg" title="Kimetsu No Yaiba">
+                <div class="title-contenido-c">
+                  <p>Nombre Anime Ocutlo | Nao</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="%PUBLIC_URL%/anime/kimetsu_no_yaiba.html" class="link-contenido">
+              <div class="contenedor-contenido">
+                <div class="hover-interface-c">
+                  <div class="arrow-interface">
+                    <i class="far fa-times-circle"></i>
+                  </div>
+                </div>
+                <img src="./assets/miniaturas/soon.jpg" title="Kimetsu No Yaiba">
+                <div class="title-contenido-c">
+                  <p>Nombre Anime Ocutlo | Nao</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="%PUBLIC_URL%/anime/kimetsu_no_yaiba.html" class="link-contenido">
+              <div class="contenedor-contenido">
+                <div class="hover-interface-c">
+                  <div class="arrow-interface">
+                    <i class="far fa-times-circle"></i>
+                  </div>
+                </div>
+                <img src="./assets/miniaturas/soon.jpg" title="Kimetsu No Yaiba">
+                <div class="title-contenido-c">
+                  <p>Nombre Anime Ocutlo | Nao</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="%PUBLIC_URL%/anime/kimetsu_no_yaiba.html" class="link-contenido">
+              <div class="contenedor-contenido">
+                <div class="hover-interface-c">
+                  <div class="arrow-interface">
+                    <i class="far fa-times-circle"></i>
+                  </div>
+                </div>
+                <img src="./assets/miniaturas/soon.jpg" title="Kimetsu No Yaiba">
+                <div class="title-contenido-c">
+                  <p>Nombre Anime Ocutlo | Nao</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="%PUBLIC_URL%/anime/kono_suba.html" class="link-contenido">
+              <div class="contenedor-contenido">
+                <div class="hover-interface-c">
+                  <div class="arrow-interface">
+                    <i class="far fa-times-circle"></i>
+                  </div>
+                </div>
+                <img src="./assets/miniaturas/soon.jpg" title="Nao">
+                <div class="title-contenido-c">
+                  <p>Nombre Anime Ocutlo | Nao</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="link-contenido">
+              <div class="contenedor-contenido">
+                <div class="hover-interface-c">
+                  <div class="arrow-interface">
+                    <i class="far fa-times-circle"></i>
+                  </div>
+                </div>
+                <img src="./assets/miniaturas/soon.jpg" title="Nao">
+                <div class="title-contenido-c">
+                  <p>Nombre Anime Ocutlo | Nao</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="link-contenido">
+              <div class="contenedor-contenido">
+                <div class="hover-interface-c">
+                  <div class="arrow-interface">
+                    <i class="far fa-times-circle"></i>
+                  </div>
+                </div>
+                <img src="./assets/miniaturas/soon.jpg" title="Nao">
+                <div class="title-contenido-c">
+                  <p>Nombre Anime Ocutlo | Nao</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="link-contenido">
+              <div class="contenedor-contenido">
+                <div class="hover-interface-c">
+                  <div class="arrow-interface">
+                    <i class="far fa-times-circle"></i>
+                  </div>
+                </div>
+                <img src="./assets/miniaturas/soon.jpg" title="Nao">
+                <div class="title-contenido-c">
+                  <p>Nombre Anime Ocutlo | Nao</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="link-contenido">
+              <div class="contenedor-contenido">
+                <div class="hover-interface-c">
+                  <div class="arrow-interface">
+                    <i class="far fa-times-circle"></i>
+                  </div>
+                </div>
+                <img src="./assets/miniaturas/soon.jpg" title="Nao">
+                <div class="title-contenido-c">
+                  <p>Nombre Anime Ocutlo | Nao</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="link-contenido">
+              <div class="contenedor-contenido">
+                <div class="hover-interface-c">
+                  <div class="arrow-interface">
+                    <i class="far fa-times-circle"></i>
+                  </div>
+                </div>
+                <img src="./assets/miniaturas/soon.jpg" title="Nao">
+                <div class="title-contenido-c">
+                  <p>Nombre Anime Ocutlo | Nao</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          </div>
+        </div>
+      
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  Jeisson Gay
+  <script src="assets/js/main.js"></script>
+  </body>
+</html>
