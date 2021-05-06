@@ -7,6 +7,8 @@
   --secondary-color-dark: #17202A;
   --extra-color-dark: #121921;
   --extra-color-dark-2: #212F3D;
+  --extra-color-dark-3: #2C3E50;
+
 
   --font-color-dark: #fff;
   --font-color-dark-2: #AEB6BF;
@@ -14,9 +16,12 @@
   --font-color-light: #111;
 
   --color-red-general: #C0392B;
+  --color-green-general: #009900;
 
 
   --color-temporada-invierno: #80DEEA;
+  --color-temporada-otoño: #EF6C00;
+  --color-temporada-primavera: #FF66FF;
 }
 
 body {
@@ -267,7 +272,8 @@ background: var(--extra-color-dark);
   display: inline-grid;
   overflow: hidden;
   margin-top: 10px;
-  border-radius: 10px;
+  margin-right: 3px;
+  border-radius: 5px;
 }
 
 .hover-interface{
@@ -276,7 +282,7 @@ background: var(--extra-color-dark);
   height: 300px;
   background:#66ccff4d;
   display: none;
-  border-radius: 10px;
+  border-radius: 5px;
   z-index: 11;
 }
 
@@ -330,7 +336,7 @@ background: var(--extra-color-dark);
   max-width: 200px;
   font-size: 16px;
   background: #121921ab;
-  border-radius: 10px 10px 0 0;
+  border-radius: 5px 5px 0 0;
 }
 
 .title-contenido-c {
