@@ -530,8 +530,6 @@ body.light{
 }
 
 body.light .container-info-list-e {
-  padding: 30px 0;
-  width: 100%;
   background: rgb(17,23,32);
   background: linear-gradient(180deg, #808B96, #f3f3f3 50%);
 }
@@ -797,8 +795,8 @@ body.light .content-cronologia p {
     font-size: 12px;
   }
 
-  .contenido-listado{
-    height: auto;
+  .contenido-listado {
+    height: 83px;
   }
 
   .cronologia{
@@ -815,6 +813,11 @@ body.light .content-cronologia p {
   .header{
     height: 60px;
   }
+
+  .contenido-listado {
+    height: 66px;
+  }
+
 
   .img-header {
     width: 60px;
@@ -919,4 +922,18 @@ body.light .content-cronologia p {
     padding: 5px 0;
     border-bottom: 1px solid var(--branch-principal);
   }
+
+  .info-temporada-upload-invierno,
+  .info-temporada-upload-primavera,
+  body.light .info-temporada-upload-invierno,
+  body.light .info-temporada-upload-primavera{
+    display: block;
+    border: 0;
+    border-radius: 0;
+  }
+
+  body.light .informacion {
+    border-left: 2px solid var(--branch-principal-light);
+    border-radius: 2px;
+}
 }
