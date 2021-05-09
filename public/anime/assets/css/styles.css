@@ -2,6 +2,7 @@
 
 :root{
   --branch-principal: #00FFFF;
+  --branch-principal-light: #FF0000;
   
   --primary-color-dark: #1C2833;
   --secondary-color-dark: #17202A;
@@ -9,11 +10,16 @@
   --extra-color-dark-2: #212F3D;
   --extra-color-dark-3: #2C3E50;
 
+  --primary-color-light: #EAECEE;
+  --secundary-color-light: #D5D8DC;
+  --extra-color-light: #808B96;
 
   --font-color-dark: #fff;
   --font-color-dark-2: #AEB6BF;
   --font-color-dark-3: #808B96;
+
   --font-color-light: #111;
+  --font-color-light-2: #555;
 
   --color-red-general: #C0392B;
   --color-green-general: #009900;
@@ -22,6 +28,10 @@
   --color-temporada-invierno: #80DEEA;
   --color-temporada-otoño: #EF6C00;
   --color-temporada-primavera: #FF66FF;
+
+  /* Degradado Anime Personalizado */
+  --bunny-girl-primary: #1A237E;
+  --bunny-girl-secondary: #6600FF;
 }
 
 body {
@@ -139,7 +149,7 @@ background: var(--extra-color-dark);
   color: var(--font-color-dark);
   transition: .2s all ease;
   text-shadow: none;
-  transform: scale(1);
+  transform: scale(.8);
 }
 
 .day i{
@@ -216,6 +226,10 @@ background: var(--extra-color-dark);
   background: var(--primary-color-dark);
 }
 
+.emision a{
+  color: var(--branch-principal);
+}
+
 .emision:hover a{
   color: var(--color-red-general);
   -webkit-box-shadow: inset 0px 0px 30px 0px var(--secondary-color-dark);
@@ -243,6 +257,11 @@ background: var(--extra-color-dark);
   background: rgb(17,23,32);
   background: linear-gradient(180deg, #121921, rgba(28,40,51,1) 70%);
 }
+
+/*.bunny-girl{
+  background: rgb(26,35,126);
+background: linear-gradient(180deg, rgba(26,35,126,1) 5%, rgba(49,27,146,1) 10%, rgba(18,25,33,1) 90%);
+}*/
 
 .info{
   width: 1000px;
@@ -328,10 +347,18 @@ background: var(--extra-color-dark);
 
 .info-temporada-upload-invierno{
   color: var(--color-temporada-invierno);
+    border: 1px solid var(--branch-principal);
+    border-radius: 4px;
+    padding: 5px;
+    background: var(--extra-color-dark-3);
 }
 
 .info-temporada-upload-primavera{
   color: var(--color-temporada-primavera);
+    border: 1px solid var(--branch-principal);
+    border-radius: 4px;
+    padding: 5px;
+    background: var(--extra-color-dark-3);
 }
 
 .container-list-e{
@@ -339,6 +366,7 @@ background: var(--extra-color-dark);
   padding: 30px 0;
   width: 100%;
   background: var(--secondary-color-dark);
+  color: var(--font-color-dark);
 }
 
 .contenido-list-e{
@@ -501,6 +529,107 @@ body.light{
   background: var(--font-color-dark);
 }
 
+body.light .container-info-list-e {
+  padding: 30px 0;
+  width: 100%;
+  background: rgb(17,23,32);
+  background: linear-gradient(180deg, #808B96, #f3f3f3 50%);
+}
+
+body.light .container-list-e{
+  background: var(--primary-color-light);
+  color: var(--font-color-light);
+}
+
+body.light .name-list h1 i,
+body.light .cronologia h1 i {
+  color: var(--branch-principal-light);
+}
+
+body.light .name-list{
+  border-bottom: 1px solid var(--branch-principal-light);
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+body.light .listado::-webkit-scrollbar-thumb {
+  background: var(--branch-principal-light);
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+body.light .listado::-webkit-scrollbar-thumb:hover {
+  background: #dd0000;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+body.light .listado::-webkit-scrollbar-thumb:active {
+  background-color: #c00000;
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+body.light .listado::-webkit-scrollbar-track {
+  background: var(--extra-color-light);
+}
+
+/* Cambiamos el fondo cuando esté en active o hover */
+body.light .listado::-webkit-scrollbar-track:hover,
+body.light .listado::-webkit-scrollbar-track:active {
+background: var(--extra-color-light);
+}
+
+body.light .link-lista:hover .contenido-listado {
+  background: var(--secundary-color-light);
+}
+body.light .contenido-info{
+  color: var(--font-color-light);
+}
+
+body.light .plataforma-upload{
+  color: var(--branch-principal-light);
+}
+
+body.light .informacion{
+  border-left: 4px solid var(--branch-principal-light);
+}
+
+body.light .generos span{
+  background: var(--font-color-dark);
+  border: 1px solid #ff000044;
+}
+
+body.light .info-temporada-upload-invierno{
+  color: var(--color-temporada-invierno);
+    border: 1px solid var(--branch-principal-light);
+    border-radius: 4px;
+    padding: 5px;
+    background: var(--extra-color-dark-3);
+}
+
+body.light .info-temporada-upload-primavera{
+  color: var(--color-temporada-primavera);
+    border: 1px solid var(--branch-principal-light);
+    border-radius: 4px;
+    padding: 5px;
+    background: var(--extra-color-dark-3);
+}
+
+body.light .titulo-listado h2{
+  color: var(--font-color-light);
+}
+
+body.light .titulo-listado h3{
+  color: #444;
+}
+
+body.light .content-cronologia h2{
+  color: var(--font-color-light);
+}
+
+body.light .link-cronologia:hover .content-cronologia h2,
+body.light .link-cronologia:hover .content-cronologia p,
+body.light .content-cronologia p {
+  color: var(--font-color-light-2);
+}
 
 /* ////////////////////////////// MEDIA QUERY'S ////////////////////////////// */
 @media (max-width: 1023px){
