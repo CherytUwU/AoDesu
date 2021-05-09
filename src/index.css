@@ -2,12 +2,16 @@
 
 :root{
   --branch-principal: #00FFFF;
+  --branch-principal-light: #FF0000;
   
   --primary-color-dark: #1C2833;
   --secondary-color-dark: #17202A;
   --extra-color-dark: #121921;
   --extra-color-dark-2: #212F3D;
   --extra-color-dark-3: #2C3E50;
+
+  --primary-color-light: #EAECEE;
+  --secundary-color-light: #D5D8DC;
 
 
   --font-color-dark: #fff;
@@ -220,6 +224,10 @@ background: var(--extra-color-dark);
   background: var(--primary-color-dark);
 }
 
+.emision a{
+  color: var(--branch-principal);
+}
+
 .emision:hover a{
   color: var(--color-red-general);
   -webkit-box-shadow: inset 0px 0px 30px 0px var(--secondary-color-dark);
@@ -233,7 +241,6 @@ background: var(--extra-color-dark);
 .main{
   width: 1018px;
   margin: 20px auto;
-  background: #17202a49;
 }
 
 .container-main-A{
@@ -374,9 +381,28 @@ background: var(--extra-color-dark);
 /* ////////////////////////////// MODO LIGHT ////////////////////////////// */
 
 body.light{
-  background: var(--font-color-dark);
+  background: var(--primary-color-light);
 }
 
+body.light .title-main{
+  color: var(--font-color-light);
+}
+
+body.light .title-main i{
+  color: var(--branch-principal-light);
+}
+
+body.light .title{
+  border-bottom: 1px solid var(--branch-principal-light);
+}
+
+body.light .emision a{
+  color: var(--branch-principal);
+}
+
+body.light .emision:hover a{
+  color: var(--color-red-general);
+}
 
 /* ////////////////////////////// MEDIA QUERY'S ////////////////////////////// */
 @media (max-width: 1023px){
