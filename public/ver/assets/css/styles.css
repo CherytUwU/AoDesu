@@ -122,6 +122,49 @@ background: var(--extra-color-dark);
   position: relative;
 }
 
+/* //////////////////// COOKIES //////////////////// */
+#overbox3 {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 300px;
+  z-index: 999999;
+  display: block;
+}
+
+#infobox3 {
+  margin: auto;
+  position: relative;
+  top: 0px;
+  height: 430px;
+  width: 100%;
+  text-align:center;
+  background-color: #17202acf;
+}
+
+#infobox3 img{
+  width: 300px;
+}
+
+#infobox3 p {
+  line-height:15px;
+  font-size:12px;
+  text-align:center;
+}
+
+#infobox3 p a {
+  margin-right:5px;
+  margin-top: 5px;
+  text-decoration: underline;
+  display: block;
+  color: var(--branch-principal);
+  font-size: 30px;
+}
+
+#infobox3 p a:hover{
+  color: #00d0d0;
+}
+
 /* ///////////////////////////// BOTON ///////////////////////////// */
 .container-switch-header {
   height: 100%;
@@ -168,7 +211,7 @@ background: var(--extra-color-dark);
   color: var(--font-color-dark);
   transition: .2s all ease;
   text-shadow: none;
-  transform: scale(1);
+  transform: scale(.8);
 }
 
 .day i{
@@ -247,6 +290,10 @@ background: var(--extra-color-dark);
   -moz-box-shadow:    inset 0px 0px 30px 0px var(--secondary-color-dark);
   box-shadow:         inset 0px 0px 30px 0px var(--secondary-color-dark);
   background: var(--primary-color-dark);
+}
+
+.emision a{
+  color: var(--branch-principal);
 }
 
 .emision:hover a{

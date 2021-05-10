@@ -103,6 +103,49 @@ body::-webkit-scrollbar-track:active {
 background: var(--extra-color-dark);
 }
 
+/* //////////////////// COOKIES //////////////////// */
+#overbox3 {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 300px;
+  z-index: 999999;
+  display: block;
+}
+
+#infobox3 {
+  margin: auto;
+  position: relative;
+  top: 0px;
+  height: 430px;
+  width: 100%;
+  text-align:center;
+  background-color: #17202acf;
+}
+
+#infobox3 img{
+  width: 300px;
+}
+
+#infobox3 p {
+  line-height:15px;
+  font-size:12px;
+  text-align:center;
+}
+
+#infobox3 p a {
+  margin-right:5px;
+  margin-top: 5px;
+  text-decoration: underline;
+  display: block;
+  color: var(--branch-principal);
+  font-size: 30px;
+}
+
+#infobox3 p a:hover{
+  color: #00d0d0;
+}
+
 /* ///////////////////////////// BOTON ///////////////////////////// */
 .container-switch-header {
   height: 100%;
@@ -216,6 +259,10 @@ background: var(--extra-color-dark);
 .nav-header{
   height: 80px;
   float: right;
+}
+
+.links-menu a{
+  color: #AEB6BF;
 }
 
 .links-menu:hover a{
@@ -523,6 +570,11 @@ background: var(--extra-color-dark);
   color: var(--branch-principal);
 }
 
+.container-comments{
+  width: 1000px;
+  margin: 20px auto;
+}
+
 /* ////////////////////////////// MODO LIGHT ////////////////////////////// */
 
 body.light{
@@ -597,7 +649,7 @@ body.light .generos span{
 
 body.light .info-temporada-upload-invierno{
   color: var(--color-temporada-invierno);
-    border: 1px solid var(--branch-principal-light);
+    border: 1px solid var(--branch-principal);
     border-radius: 4px;
     padding: 5px;
     background: var(--extra-color-dark-3);
@@ -605,7 +657,7 @@ body.light .info-temporada-upload-invierno{
 
 body.light .info-temporada-upload-primavera{
   color: var(--color-temporada-primavera);
-    border: 1px solid var(--branch-principal-light);
+    border: 1px solid var(--branch-principal);
     border-radius: 4px;
     padding: 5px;
     background: var(--extra-color-dark-3);
@@ -643,6 +695,16 @@ body.light .content-cronologia p {
     font-size: 16px;
   }
 
+  .container-comments{
+    width: 800px;
+    margin: 20px auto;
+  }
+
+  .cronologia {
+    width: 98%;
+    margin: 30px auto;
+  }
+
   .info{
     width: 800px;
   }
@@ -676,8 +738,9 @@ body.light .content-cronologia p {
     width: 590px;
   }
 
-  .cronologia{
+  .content-cronologia{
     width: 185px;
+    display: inline-table;
   }
 
   .content-cronologia h2{
@@ -692,6 +755,10 @@ body.light .content-cronologia p {
   .titulo-listado{
     width: 370px;
   }
+
+  .cronologia h1{
+    font-size: 20px;
+  }
 }
 
 @media(max-width: 825px){
@@ -700,6 +767,11 @@ body.light .content-cronologia p {
     height: 316px;
     overflow-y: scroll;
     overflow-x: hidden;
+  }
+
+  .container-comments{
+    width: 95%;
+    margin: 10px auto;
   }
 
   .info{
@@ -799,10 +871,6 @@ body.light .content-cronologia p {
     height: 83px;
   }
 
-  .cronologia{
-    width: 200px;
-  }
-
   .content-cronologia h2{
     width: 169px;
     font-size: 16px;
@@ -818,6 +886,11 @@ body.light .content-cronologia p {
     height: 66px;
   }
 
+  .content-cronologia {
+    width: 312px;
+    display: block;
+    margin: 10px auto;
+  }
 
   .img-header {
     width: 60px;
@@ -935,5 +1008,5 @@ body.light .content-cronologia p {
   body.light .informacion {
     border-left: 2px solid var(--branch-principal-light);
     border-radius: 2px;
-}
+  }
 }
