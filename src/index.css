@@ -64,27 +64,43 @@ h2{
 }
 
 /* //////////////////// COOKIES //////////////////// */
-#overbox3 {
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  width: 300px;
-  z-index: 999999;
-  display: block;
+#cajacookies{
+  width: 100%;
+  margin: 20px 0px;
 }
 
 #infobox3 {
   margin: auto;
   position: relative;
   top: 0px;
-  height: 430px;
-  width: 100%;
   text-align:center;
-  background-color: #17202acf;
+  width: 300px;
 }
 
-#infobox3 img{
-  width: 300px;
+#infobox3 button {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: -35px;
+  background: transparent;
+  color: var(--branch-principal);
+  border: 0;
+  font-size: 26px;
+  text-shadow: 0px 0px 10px rgba(0, 255, 255, 1);
+}
+
+.cookies-img{
+  width: 160px;
+  margin: 0 auto;
+  position: relative;
+  z-index: -1;
+}
+
+.cookies-img img {
+  width: 100%;
+  position: absolute;
+  right: -170px;
+  top: -85px;
 }
 
 #infobox3 p {
@@ -588,5 +604,20 @@ body.light .emision:hover a{
 
   .container-switch-header {
     padding: 0;
-}
+  }
+
+  #infobox3 {
+    width: 250px;
+  }
+
+  .cookies-img{
+    width: 110px;
+  }
+
+  .cookies-img img {
+    width: 100%;
+    position: absolute;
+    right: -100px;
+    top: -70px;
+  }
 }
