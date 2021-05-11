@@ -1,40 +1,19 @@
-
- function GetCookie(name) {
-    var arg=name+"=";
-    var alen=arg.length;
-    var clen=document.cookie.length;
-    var i=0;
- 
-    while (i<clen) {
-        var j=i+alen;
- 
-        if (document.cookie.substring(i,j)==arg)
-            return "1";
-        i=document.cookie.indexOf(" ",i)+1;
-        if (i==0)
-            break;
+/* ésto comprueba la localStorage si ya tiene la variable guardada */
+function compruebaAceptaCookies() {
+    if(localStorage.aceptaCookies == 'true'){
+      cajacookies.style.display = 'none';
     }
- 
-    return null;
-}
- 
-function aceptar_cookies(){
-    var expire=new Date();
-    expire=new Date(expire.getTime()+7776000000);
-    document.cookie="cookies_surestao=aceptada; expires="+expire;
- 
-    var visit=GetCookie("cookies_surestao");
- 
-    if (visit==1){
-        popbox3();
-    }
-}
- 
-$(function() {
-    var visit=GetCookie("cookies_surestao");
-    if (visit==1){ popbox3(); }
-});
- 
-function popbox3() {
-    $('#overbox3').toggle();
-}
+  }
+  
+  /* aquí guardamos la variable de que se ha
+  aceptado el uso de cookies así no mostraremos
+  el mensaje de nuevo */
+  function aceptarCookies() {
+    localStorage.aceptaCookies = 'true';
+    cajacookies.style.display = 'none';
+  }
+  
+  /* ésto se ejecuta cuando la web está cargada */
+  $(document).ready(function () {
+    compruebaAceptaCookies();
+  });
