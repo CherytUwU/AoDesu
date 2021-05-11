@@ -310,287 +310,37 @@ background: var(--extra-color-dark);
 
 .main {
   width: 100%;
-  margin: 0;
-  
+  margin: 0;  
 }
 
-.container-info-list-e{
-  padding: 30px 0;
-  width: 100%;
-  background: rgb(17,23,32);
-  background: linear-gradient(180deg, #121921, rgba(28,40,51,1) 70%);
-}
-
-/*.bunny-girl{
-  background: rgb(26,35,126);
-background: linear-gradient(180deg, rgba(26,35,126,1) 5%, rgba(49,27,146,1) 10%, rgba(18,25,33,1) 90%);
-}*/
-
-.info{
-  width: 1000px;
-  height: auto;
-  margin: 0 auto;
-}
-
-.img-info {
-  width: 200px;
-  display: inline-block;
-  margin-right: 5px;
-}
-
-.status-finalizado{
-  font-weight: 500;
-  margin: 0;
-  display: block;
-  background: var(--color-red-general);
-  padding: 5px;
-  text-align: center;
-}
-
-.status-emision{
-  font-weight: 500;
-  margin: 0;
-  display: block;
-  background: var(--color-green-general);
-  padding: 5px;
-  text-align: center;
-}
-
-.contenido-info {
-  width: 790px;
-  display: inline-block;
-}
-
-.img-info img{
-  width: 100%;
-}
-
-.contenido-info h1{
-  font-size: 32px;
-  font-weight: 500;
-  margin: 0;
-}
-
-.small h1{
-  font-size: 28px;
-  font-weight: 500;
-  margin: 0;
-}
-
-.contenido-info h2{
-  margin: 0;
-  font-weight: 400;
-}
-
-.informacion{
-  font-weight: 400;
-  border-left: 4px solid var(--branch-principal);
-  border-radius: 4px;
-  font-size: 14px;
-}
-
-.generos span{
-  padding: 6px 10px;
-  font-weight: 400;
-  background: var(--extra-color-dark);
-  border-radius: 20px;
-  border: 1px solid #00ffff44;
-}
-
-/* SPANS .contenido-info h3 */
-.plataforma-upload{
-  margin: 0 4px;
+.nombre-marca{
   color: var(--branch-principal);
-  font-weight: 500;
-}
-
-.temporada-upload{
-  font-weight: 500;
-}
-
-.info-temporada-upload-invierno{
-  color: var(--color-temporada-invierno);
-    border: 1px solid var(--branch-principal);
-    border-radius: 4px;
-    padding: 5px;
-    background: var(--extra-color-dark-3);
-}
-
-.info-temporada-upload-primavera{
-  color: var(--color-temporada-primavera);
-    border: 1px solid var(--branch-principal);
-    border-radius: 4px;
-    padding: 5px;
-    background: var(--extra-color-dark-3);
-}
-
-.container-list-e{
-  width: 100%;
-  padding: 30px 0;
-  width: 100%;
-  background: var(--secondary-color-dark);
-  color: var(--font-color-dark);
-}
-
-.contenido-list-e{
-  width: 1000px;
-  margin: 0 auto;
-}
-
-.name-list{
-  display: block;
-  border-bottom: 1px solid var(--branch-principal);
-}
-
-.name-list h1{
-  margin: 0;
-  font-weight: 500;
-}
-
-.name-list h1 i{
-  color: var(--branch-principal);
-}
-
-.listado{
-  width: 700px;
-  display: inline-block;
-  height: 650px;
-  overflow-y: scroll;
-}
-
-.listado::-webkit-scrollbar {
-  width: 8px;     /* Tamaño del scroll en vertical */
-  height: 8px;    /* Tamaño del scroll en horizontal */
-  /* display: none;  Ocultar scroll */
-}
-
-/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
-.listado::-webkit-scrollbar-thumb {
-  background: var(--branch-principal);
-}
-
-/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
-.listado::-webkit-scrollbar-thumb:hover {
-  background: #00dddd;
-  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-/* Cambiamos el fondo cuando esté en active */
-.listado::-webkit-scrollbar-thumb:active {
-  background-color: #00c0c0;
-}
-
-/* Ponemos un color de fondo y redondeamos las esquinas del track */
-.listado::-webkit-scrollbar-track {
-  background: var(--extra-color-dark);
-}
-
-/* Cambiamos el fondo cuando esté en active o hover */
-.listado::-webkit-scrollbar-track:hover,
-.listado::-webkit-scrollbar-track:active {
-background: var(--extra-color-dark);
-}
-
-.link-lista:hover .contenido-listado{
-  background: var(--primary-color-dark);
-}
-
-.contenido-listado{
-  width: 100%;
-  height: 114px;
-  padding: 10px 0;
-  cursor: pointer;
-}
-
-.img-listado{
-  width: 200px;
-  margin: 0;
-  overflow: hidden;
-  float: left;
-}
-
-.img-listado img{
-  width: 100%;
-}
-
-.titulo-listado{
-  float: left;
-  margin: 10px 5px;
-  width: 425px;
-}
-
-.titulo-listado h2,
-.titulo-listado p,
-.titulo-listado h3{
-  margin: 0;
-  color: var(--font-color-dark);
-}
-
-.titulo-listado h2{
-  font-weight: 300;
-}
-
-.titulo-listado h3{
-  font-weight: 500;
-  color: var(--font-color-dark-2);
-  font-size: 16px;
-}
-
-.titulo-listado p{
-  color: var(--font-color-dark-3);
-}
-
-.episodio{
   font-weight: 600;
 }
 
-.cronologia{
-  width: 280px;
-  float: right;
-}
-
-.link-cronologia:hover .content-cronologia h2{
-  color: var(--font-color-dark-2);
-}
-
-.content-cronologia{
+.container-aviso-legal-A{
   width: 100%;
-  margin-bottom: 10px;
+  background: rgb(28,40,51);
+  background: linear-gradient(290deg, rgba(28,40,51,1) 0%, rgba(23,32,42,1) 50%, rgba(18,25,33,1) 100%);
 }
 
-.content-cronologia img{
-  width: 100%;
+.container-aviso-legal-B{
+  width: 1010px;
+  padding: 20px 0;
+  margin: 0 auto;
 }
 
-.content-cronologia h2{
-  width: 240px;
-  color: var(--font-color-dark);
-  margin: 3px 0;
-  font-weight: 500;
-  display: inline-block;
-}
-
-.content-cronologia p{
-  color: var(--font-color-dark-2);
-  text-align: right;
+.container-aviso-legal-B h1{
   margin: 0;
-  text-decoration: none;
-  display: inline-block;
 }
 
-.cronologia h1 {
-  font-weight: 400;
+.container-aviso-legal-B a{
+  color: var(--font-color-dark-3);
 }
 
-.cronologia h1 i{
-  color: var(--branch-principal);
+.container-aviso-legal-B a:hover{
+  color: var(--font-color-dark-2);
 }
-
-.container-comments{
-  width: 1000px;
-  margin: 20px auto;
-}
-
 /* ////////////////////////////// MODO LIGHT ////////////////////////////// */
 body.light #infobox3 p{
   color: var(--font-color-light);
@@ -609,23 +359,25 @@ body.light{
   background: var(--font-color-dark);
 }
 
-body.light .container-info-list-e {
-  background: rgb(17,23,32);
-  background: linear-gradient(180deg, #808B96, #f3f3f3 50%);
+body.light .container-aviso-legal-B a{
+  color: var(--font-color-light-2);
 }
 
-body.light .container-list-e{
-  background: var(--primary-color-light);
+body.light .container-aviso-legal-B a:hover{
   color: var(--font-color-light);
 }
 
-body.light .name-list h1 i,
-body.light .cronologia h1 i {
+body.light .nombre-marca{
   color: var(--branch-principal-light);
 }
 
-body.light .name-list{
-  border-bottom: 1px solid var(--branch-principal-light);
+body.light .container-aviso-legal-A{
+  width: 100%;
+  background: rgb(234,236,238);
+  background: linear-gradient(290deg, rgba(234,236,238,1), rgba(213,216,220,1) 100%)}
+
+body.light .container-aviso-legal-B{
+  color: var(--font-color-light);
 }
 
 /* Ponemos un color de fondo y redondeamos las esquinas del thumb */

@@ -438,6 +438,19 @@ background: var(--extra-color-dark);
 }
 
 /* ////////////////////////////// MODO LIGHT ////////////////////////////// */
+body.light #infobox3 p{
+  color: var(--font-color-light);
+}
+
+body.light #infobox3 p a,
+body.light #infobox3 button{
+  color: var(--branch-principal-light);
+}
+
+body.light #infobox3 button{
+  text-shadow: 0px 0px 5px rgb(255, 0, 0);
+}
+
 
 body.light{
   background: var(--primary-color-light);
