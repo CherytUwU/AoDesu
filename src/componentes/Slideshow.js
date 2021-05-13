@@ -9,7 +9,7 @@ const Slideshow = ({
         controles = false, 
         autoplay  = false, 
         velocidad="500", 
-        intervalo="10000ms"
+        intervalo="5000"
     }) => {
 
     const slideshow = useRef(null);
@@ -126,10 +126,10 @@ const Slide = styled.div`
 `;
 
 const TextoSlide = styled.div`
-    background: ${props => props.colorFondo ? props.colorFondo : 'rgba(0, 0, 0, .8)'};
+    background: ${props => props.colorFondo ? props.colorFondo : 'rgba(0, 0, 0, .3)'};
     color: ${props => props.colorTexto ? props.colorTexto : '#fff'};
     width: 100%;
-    padding: 0;
+    padding: 10px 60px;
     text-align: center;
     position: absolute;
     bottom: 0px;
@@ -165,7 +165,7 @@ const Boton = styled.button`
     }
 
     path {
-        filter: ${props => props.derecho ? 'drop-shadow(-2px 0px 0px #00ffff)' : 'drop-shadow(2px 0px 0px #00ffff)'}
+        filter: ${props => props.derecho ? 'drop-shadow(-2px 0px 0px #fff)' : 'drop-shadow(2px 0px 0px #fff)'}
     }
 
     ${props => props.derecho ? 'right: 0': 'left: 0'}
