@@ -1,5 +1,6 @@
 import React from 'react';
 import {Slideshow, Slide, TextoSlide} from './componentes/Slideshow'
+import './index.css';
 import styled from 'styled-components';
 import img1 from './img/1.jpg';
 import img2 from './img/2.jpg';
