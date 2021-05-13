@@ -299,19 +299,6 @@ background: var(--extra-color-dark);
   background: var(--primary-color-dark);
 }
 
-/* ////////////////////////////// SLIDER ///////////////////////////// */
-#root main h2{
-  font-size: 32px;
-  position: absolute;
-  color: var(--branch-principal);
-  z-index: 99;
-  padding: 10px;
-  margin: 0;
-  background: var(--secondary-color-dark);
-  border-right: 2px solid var(--branch-principal);
-  border-bottom: 2px solid var(--branch-principal);
-}
-
 /* ////////////////////////////// MAIN ////////////////////////////// */
 
 .main{

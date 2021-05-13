@@ -126,10 +126,10 @@ const Slide = styled.div`
 `;
 
 const TextoSlide = styled.div`
-    background: ${props => props.colorFondo ? props.colorFondo : 'rgba(0, 0, 0, .3)'};
+    background: ${props => props.colorFondo ? props.colorFondo : 'rgba(0, 0, 0, .8)'};
     color: ${props => props.colorTexto ? props.colorTexto : '#fff'};
     width: 100%;
-    padding: 10px 60px;
+    padding: 9;
     text-align: center;
     position: absolute;
     bottom: 0px;
